@@ -2,9 +2,9 @@
   
    #BEE
    
-   #LIQ+#RFI+#SHIB+#DOGE = #BEE? no... SAFEMOON, no hang on... MoonTrainWreck 4 t3h w1n!
+   #LIQ+#RFI+#SHIB+#DOGE = #BEE? no... SAFEMOON, no hang on... MoonTrainWrek 4 t3h w1n!
 
-   #MoonTrainWreck features:
+   #MoonTrainWrek features:
    3% fee auto add to the liquidity pool to locked forever when selling
    2% fee auto distribute to all holders
    I created a black hole so #MTW token will deflate itself in supply with every transaction
@@ -693,7 +693,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
 }
 
 
-contract MoonTrainWreck is Context, IERC20, Ownable {
+contract MoonTrainWrek is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
@@ -711,7 +711,7 @@ contract MoonTrainWreck is Context, IERC20, Ownable {
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
-    string private _name = "MoonTrainWreck";
+    string private _name = "MoonTrainWrek";
     string private _symbol = "MTW";
     uint8 private _decimals = 9;
     
