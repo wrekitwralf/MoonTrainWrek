@@ -715,10 +715,10 @@ contract MoonTrainWrek is Context, IERC20, Ownable {
     string private _symbol = "MTW";
     uint8 private _decimals = 9;
     
-    uint256 public _taxFee = -5; # MTW lets spice this up 
+    uint256 public _taxFee = 5; 
     uint256 private _previousTaxFee = _taxFee;
-    
-    uint256 public _liquidityFee = -5; # MTW lets spice this up 
+
+    uint256 public _liquidityFee = 5; 
     uint256 private _previousLiquidityFee = _liquidityFee;
 
     IUniswapV2Router02 public immutable uniswapV2Router;
@@ -747,7 +747,7 @@ contract MoonTrainWrek is Context, IERC20, Ownable {
     constructor () public {
         _rOwned[_msgSender()] = _rTotal;
         
-        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F);
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1);
          // Create a uniswap pair for this new token
         uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
             .createPair(address(this), _uniswapV2Router.WETH());
